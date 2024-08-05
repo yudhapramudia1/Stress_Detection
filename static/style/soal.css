@@ -1,0 +1,125 @@
+body,
+html {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+img {
+    width: 48px;
+    height: auto;
+    margin-left: -30px;
+}
+/*  */
+
+/* Navbar  */
+nav {
+    height: 9.7%;
+    display: grid;
+    grid-template-areas: "logo fisiologi title psikologi tombol-home1";
+    grid-template-columns: 1fr 1fr 1fr 1ft 1fr;
+    align-items: center;
+    background-color: #4CAF50;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tombol-home1, .btn1, .btn2 {
+    padding-right: 40px;
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+.home, .fisiologi, .psikologi {
+   font-size: 24px;
+   font-weight: 700;
+   color: #fff;
+   cursor: context-menu;
+}
+.title {
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* content */
+.container3 {
+    background-color: #4caf4f7e;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "soal"
+    "footer";
+    grid-template-rows: 100% 7%;
+    
+}
+
+.soal {
+    justify-items: center;
+    margin: 2rem;
+
+}
+
+.arahan {
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.footer {
+    background-color: #0D47A1;
+}
+
+.isi-soal {
+    display: grid;
+    justify-items: start;
+}
+
+.pernyatan {
+    margin-left: 15px;
+    justify-self: left;
+    padding: 0.5rem;
+}
+
+.jawaban {
+    display: flex;
+    width: 88%;
+    justify-content: center;
+}
+
+table {
+    width: 50%;
+}
+
+.Submit {
+    width: 189px;
+    height: 50px;
+    background-color: #4CAF50;
+    border-radius: 20px;
+    margin-top: 25px;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+.tulis-submit{
+    justify-items: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.poin {
+    z-index: 2;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 30px;
+    display: grid;
+    width: 90%;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}

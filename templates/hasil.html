@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Logo 123-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/Stress logo.png')}}" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/hasil.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <title>STRESS DETECTION</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/Stress logo.png')}}" alt="">
+        </div>
+        <div class="btn1">
+            <a href="/">
+                <div class="fisiologi" id="tombol-fisiologi">
+                    FISIOLOGI
+                </div>
+            </a>
+        </div>
+        <div class="title">
+            STRESS DETECTION
+        </div>
+        <div class="btn2">
+            <a href="/soal">
+                <div class="psikologi" id="tombol-psikologi">
+                    PSIKOLOGI
+                </div>
+            </a>
+        </div>
+        <div class="tombol-home1">
+            <a href="/">
+                <div class="home" id="tombol-home">
+                    HOME
+                </div>
+            </a>
+        </div>
+        
+    </nav>
+    <!-- isi content -->
+    <div class="container4">
+        <div class="hasil">
+            <div class="Tampilan-fisiologi">
+                <div class="tulisan-fisiologi">
+                    FISIOLOGI
+                </div>
+                <div class="hasil-fisiologi">
+                    <div id="fisiologi"></div>
+                </div>
+                
+            </div>
+            <div class="Tampilan-psikologi"> 
+                <div class="tulisan-psikologi">
+                    PSIKOLOGI
+                </div>
+                <div class="hasil-psikologi">
+                    <div id="psikologi"></div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <button class="Reset" id="Reset" ><div class="tulis-Reset">Reset</div></button>
+        </div>
+        <div class="tabel">
+            <div class="tabel-fisiologi">
+                <div class="image-container-fisiologi"></div>
+            </div>
+            <div class="tabel-psikologi">
+                <div class="image-container-psikologi"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script type="module" src="{{ url_for('static', filename='hasil.js')}}"></script>
+
+</body>
+</html>

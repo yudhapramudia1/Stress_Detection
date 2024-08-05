@@ -1,0 +1,172 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+img {
+    width: 48px;
+    height: auto;
+    margin-left: -30px;
+}
+/*  */
+
+/* Navbar  */
+nav {
+    height: 9.7%;
+    display: grid;
+    grid-template-areas: "logo fisiologi title psikologi tombol-home1";
+    grid-template-columns: 1fr 1fr 1fr 1ft 1fr;
+    align-items: center;
+    background-color: #4CAF50;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tombol-home1, .btn1, .btn2 {
+    padding-right: 40px;
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+.home, .fisiologi, .psikologi {
+   font-size: 24px;
+   font-weight: 700;
+   color: #fff;
+   cursor: context-menu;
+}
+.title {
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* content */
+.container {
+    height: 668.5px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "kiri kanan1"
+    "footer footer1";
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 78.5% 21.5%;
+}
+.kiri {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: rgba(13, 72, 161, 0.7);
+}
+.Tampilan-gsr, .Tampilan-suhu {
+    width: 199px;
+    height: 195px;
+    border-radius: 40px;
+    background-color: #fff;
+}
+
+.tulisan-gsr, .tulisan-suhu {
+    padding-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+} 
+.hasil-gsr, .hasil-suhu {
+    display: inline-flex;
+    font-size: 64px;
+    font-weight: 500;
+}
+.kanan1 {
+    display: grid;
+    grid-template-areas: "isi"
+    "isi-bawah";
+    grid-template-rows: 80% 20%;
+    background-color: rgba(13, 72, 161, 0.7);
+}
+/* Tombol deteksi */
+.isi-bawah {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.tombol-deteksi, .tombol-next{
+    width: 189px;
+    /* height: 50px; */
+    background-color: #4CAF50;
+    border-radius: 20px;
+    margin-top: 25px;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+.tulis-deteksi, .tulis-next {
+    justify-items: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.tekanan, .bpm, .spo2 {
+    margin-top: 25px;
+    justify-content: center;
+}
+input {
+    width: 320px;
+    height: 47px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+.pernyataan-tekanan, .pernyataan-bpm, .pernyataan-spo2 {
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: start;
+    color: #fff;
+    display: grid;
+    margin-left: 30px;
+    padding-bottom: 5px;
+}
+.footer, .footer1{
+    background-color: #0D47A1;
+}
+.container1, .container2 {
+    height: 668.5px;
+    width: 100%;
+    display: none;
+    grid-template-areas: "bg-hasil"
+    "footer";
+    grid-template-rows: 78.5% 21.5%;
+}
+.bg-hasil {
+    justify-items: center;
+    display: grid;
+    align-items: center;
+    background-color: rgba(13, 72, 161, 0.7);
+}
+.hasil-stres1 {
+    display: grid;
+    align-items: center;
+    width: 337px;
+    height: 358px;
+    justify-items: center;
+    background-color: #fff;
+    border-radius: 40px;
+}
+.tulisan-stres {
+    font-size: 24px;
+    font-weight: 500;
+}
+.hasil-stres {
+    font-size: 96px;
+    font-weight: 500;
+}
+.deskrips-normal, .deskrips-tidak-normal {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}

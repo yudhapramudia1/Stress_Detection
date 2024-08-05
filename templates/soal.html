@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Logo 123-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/Stress logo.png')}}" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/soal.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <title>STRESS DETECTION</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/Stress logo.png')}}" alt="">
+        </div>
+        <div class="btn1">
+            <a href="/">
+                <div class="fisiologi" id="tombol-fisiologi">
+                    FISIOLOGI
+                </div>
+            </a>
+        </div>
+        <div class="title">
+            STRESS DETECTION
+        </div>
+        <div class="btn2">
+            <a href="/soal">
+                <div class="psikologi" id="tombol-psikologi">
+                    PSIKOLOGI
+                </div>
+            </a>
+        </div>
+        <div class="tombol-home1">
+            <a href="/">
+                <div class="home" id="tombol-home">
+                    HOME
+                </div>
+            </a>
+        </div>
+        
+    </nav>
+    <!-- isi content -->
+    <div class="container3">
+        <div class="soal">
+            <div class="arahan">
+                Soal dalam Perceived Stress Scaled ini akan menanyakan tentang perasaan dan pikiran anda dalam satu bulan terakhir ini. Anda akan diminta untuk mengindikasikan seberapa sering perasaan ataupun pikiran  dengan memilih jawaban yang sesuai dengan diri Anda.  Penilaian dalam skala ini dilakukan dengan menggunakan skala Likert dengan lima alternatif pilihan jawaban yaitu, 0 (tidak pernah), 1 (hampir tidak pernah), 2 (kadang-kadang), 3 (cukup sering), hingga 4 (sangat sering).
+            </div>
+                <div class="isi-soal">
+                    <!-- Soal 1 -->
+                    <div class="poin">
+                        <div class="pernyatan">1. Dalam satu bulan terakhir ini, seberapa sering anda merasa sedih/terganggu karena hal-hal yang terjadi tanpa diduga?</div>
+                        <div class="jawaban">
+                            <table>
+                                <tr>
+                                  <th></th>
+                                  <th>1</th>
+                                  <th>2</th>
+                                  <th>3</th>
+                                  <th>4</th>
+                                  <th>5</th>
+                                  <th></th>
+                                </tr>
+                                <tr>
+                                  <td>Tidak Pernah</td>
+                                  <td><input type="radio" name="question1" value="0" class="radio-button"></td>
+                                  <td><input type="radio" name="question1" value="1" class="radio-button"></td>
+                                  <td><input type="radio" name="question1" value="2" class="radio-button"></td>
+                                  <td><input type="radio" name="question1" value="3"class="radio-button"></td>
+                                  <td><input type="radio" name="question1" value="4" class="radio-button"></td>
+                                  <td>Sangat Sering</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Soal 2 -->
+                    <div class="poin">
+                        <div class="pernyatan">2. Dalam satu bulan terakhir ini, seberapa sering anda merasa tidak dapat mengontrol hal-hal yang penting dalam kehidupan anda?</div>
+                        <div class="jawaban">
+                            <table>
+                                <tr>
+                                  <th></th>
+                                  <th>1</th>
+                                  <th>2</th>
+                                  <th>3</th>
+                                  <th>4</th>
+                                  <th>5</th>
+                                  <th></th>
+                                </tr>
+                                <tr>
+                                  <td>Tidak Pernah</td>
+                                  <td><input type="radio" name="question2" value="0"></td>
+                                  <td><input type="radio" name="question2" value="1"></td>
+                                  <td><input type="radio" name="question2" value="2"></td>
+                                  <td><input type="radio" name="question2" value="3"></td>
+                                  <td><input type="radio" name="question2" value="4"></td>
+                                  <td>Sangat Sering</td>
+                                </tr>
+                            </table>                    
+                        </div>
+                    </div>
+                    <!-- Soal 3 -->
+                    <div class="poin">
+                        <div class="pernyatan">3. Dalam satu bulan terakhir ini, seberapa sering anda merasa gelisah dan tertekan?</div>
+                        <div class="jawaban">
+                            <table>
+                                <tr>
+                                  <th></th>
+                                  <th>1</th>
+                                  <th>2</th>
+                                  <th>3</th>
+                                  <th>4</th>
+                                  <th>5</th>
+                                  <th></th>
+                                </tr>
+                                <tr>
+                                  <td>Tidak Pernah</td>
+                                  <td><input type="radio" name="question3" value="0"></td>
+                                  <td><input type="radio" name="question3" value="1"></td>
+                                  <td><input type="radio" name="question3" value="2"></td>
+                                  <td><input type="radio" name="question3" value="3"></td>
+                                  <td><input type="radio" name="question3" value="4"></td>
+                                  <td>Sangat Sering</td>
+                                </tr>
+                            </table>                    
+                        </div>
+                    </div>
+                    <!-- Soal 4 -->
+                    <div class="poin">
+                        <div class="pernyatan">4. Dalam satu bulan terakhir ini, seberapa sering anda merasa yakin terhadap kemampuan diri untuk menangani masalah pribadi?</div>
+                        <div class="jawaban">
+                            <table>
+                                <tr>
+                                  <th></th>
+                                  <th>1</th>
+                                  <th>2</th>
+                                  <th>3</th>
+                                  <th>4</th>
+                                  <th>5</th>
+                                  <th></th>
+                                </tr>
+                                <tr>
+                                  <td>Tidak Pernah</td>
+                                  <td><input type="radio" name="question4" value="4"></td>
+                                  <td><input type="radio" name="question4" value="3"></td>
+                                  <td><input type="radio" name="question4" value="2"></td>
+                                  <td><input type="radio" name="question4" value="1"></td>
+                                  <td><input type="radio" name="question4" value="0"></td>
+                                  <td>Sangat Sering</td>
+                                </tr>
+                            </table>                    
+                        </div>
+                    </div>
+                    <!-- Soal 5 -->
+                    <div class="poin">
+                        <div class="pernyatan">5. Dalam satu bulan terakhir ini, seberapa sering anda merasa bahwa hal-hal yang terjadi sesuai dengan kehendak anda?</div>
+                        <div class="jawaban">
+                            <table>
+                                <tr>
+                                <th></th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th></th>
+                                </tr>
+                                <tr>
+                                <td>Tidak Pernah</td>
+                                <td><input type="radio" name="question5" value="4"></td>
+                                <td><input type="radio" name="question5" value="3"></td>
+                                <td><input type="radio" name="question5" value="2"></td>
+                                <td><input type="radio" name="question5" value="1"></td>
+                                <td><input type="radio" name="question5" value="0"></td>
+                                <td>Sangat Sering</td>
+                                </tr>
+                            </table>                    
+                        </div>
+                    </div>
+                    <!-- Soal 6 -->
+                    <div class="poin">
+                        <div class="pernyatan">6. Dalam satu bulan terakhir ini, seberapa sering anda menemukan bahwa anda tidak dapat menyelesaikan hal-hal yang harus anda kerjakan?</div>
+                        <div class="jawaban">
+                            <table>
+                                <tr>
+                                  <th></th>
+                                  <th>1</th>
+                                  <th>2</th>
+                                  <th>3</th>
+                                  <th>4</th>
+                                  <th>5</th>
+                                  <th></th>
+                                </tr>
+                                <tr>
+                                  <td>Tidak Pernah</td>
+                                  <td><input type="radio" name="question6" value="0"></td>
+                                  <td><input type="radio" name="question6" value="1"></td>
+                                  <td><input type="radio" name="question6" value="2"></td>
+                                  <td><input type="radio" name="question6" value="3"></td>
+                                  <td><input type="radio" name="question6" value="4"></td>
+                                  <td>Sangat Sering</td>
+                                </tr>
+                            </table>                    
+                        </div>
+                        
+                    </div>
+                    <!-- Soal 7 -->
+                    <div class="poin">
+                        <div class="pernyatan">7. Dalam satu bulan terakhir ini, seberapa sering anda telah dapat mengontrol rasa mudah tersinggung dalam kehidupan anda?</div>
+                        <div class="jawaban">
+                            <table>
+                                <tr>
+                                  <th></th>
+                                  <th>1</th>
+                                  <th>2</th>
+                                  <th>3</th>
+                                  <th>4</th>
+                                  <th>5</th>
+                                  <th></th>
+                                </tr>
+                                <tr>
+                                  <td>Tidak Pernah</td>
+                                  <td><input type="radio" name="question7" value="4"></td>
+                                  <td><input type="radio" name="question7" value="3"></td>
+                                  <td><input type="radio" name="question7" value="2"></td>
+                                  <td><input type="radio" name="question7" value="1"></td>
+                                  <td><input type="radio" name="question7" value="0"></td>
+                                  <td>Sangat Sering</td>
+                                </tr>
+                            </table>                    
+                        </div>
+                        
+                    </div>
+                    <!-- Soal 8 -->
+                    <div class="poin">
+                        <div class="pernyatan">8. Dalam satu bulan terakhir ini, seberapa sering  anda merasa seperti pecundang dan murung yang disebabkan karena diri tidak mampu melakukan sesuatu?</div>
+                        <div class="jawaban">
+                            <table>
+                                <tr>
+                                  <th></th>
+                                  <th>1</th>
+                                  <th>2</th>
+                                  <th>3</th>
+                                  <th>4</th>
+                                  <th>5</th>
+                                  <th></th>
+                                </tr>
+                                <tr>
+                                  <td>Tidak Pernah</td>
+                                  <td><input type="radio" name="question8" value="4"></td>
+                                  <td><input type="radio" name="question8" value="3"></td>
+                                  <td><input type="radio" name="question8" value="2"></td>
+                                  <td><input type="radio" name="question8" value="1"></td>
+                                  <td><input type="radio" name="question8" value="0"></td>
+                                  <td>Sangat Sering</td>
+                                </tr>
+                            </table>                    
+                        </div>
+                    </div>
+                    <!-- Soal 9 -->
+                    <div class="poin">
+                        <div class="pernyatan">9. Dalam satu bulan terakhir ini, seberapa sering anda marah karena hal-hal terjadi di luar kendali anda?</div>
+                        <div class="jawaban">
+                            <table>
+                                <tr>
+                                  <th></th>
+                                  <th>1</th>
+                                  <th>2</th>
+                                  <th>3</th>
+                                  <th>4</th>
+                                  <th>5</th>
+                                  <th></th>
+                                </tr>
+                                <tr>
+                                  <td>Tidak Pernah</td>
+                                  <td><input type="radio" name="question9" value="0"></td>
+                                  <td><input type="radio" name="question9" value="1"></td>
+                                  <td><input type="radio" name="question9" value="2"></td>
+                                  <td><input type="radio" name="question9" value="3"></td>
+                                  <td><input type="radio" name="question9" value="4"></td>
+                                  <td>Sangat Sering</td>
+                                </tr>
+                            </table>                    
+                        </div> 
+                    </div>
+                    <!-- Soal 10 -->
+                    <div class="poin">    
+                        <div class="pernyatan">10. Dalam satu bulan terakhir ini, seberapa sering anda merasa banyak kesulitan yang menumpuk sehingga anda tidak dapat mengatasinya?</div>
+                        <div class="jawaban">
+                            <table>
+                                <tr>
+                                <th></th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th></th>
+                                </tr>
+                                <tr>
+                                <td>Tidak Pernah</td>
+                                <td><input type="radio" name="question10" value="0"></td>
+                                <td><input type="radio" name="question10" value="1"></td>
+                                <td><input type="radio" name="question10" value="2"></td>
+                                <td><input type="radio" name="question10" value="3"></td>
+                                <td><input type="radio" name="question10" value="4"></td>
+                                <td>Sangat Sering</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Soal-soal berikutnya ditambahkan di sini -->
+              <a href="/hasil">
+                <button class="Submit" id="Submit" ><div class="tulis-submit">Submit</div></button>
+            </a>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script type="module" src="{{ url_for('static', filename='soal.js')}}"></script>
+
+</body>
+</html>
